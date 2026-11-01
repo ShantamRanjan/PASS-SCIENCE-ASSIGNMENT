@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "NEXUS: Launch Workbench",
+      "type": "shell",
+      "command": "${workspaceFolder}/Launch.exe",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "NEXUS: Build Backend",
+      "type": "shell",
+      "command": "cmake --build backend/build-msvc --config Release",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

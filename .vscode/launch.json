@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "NEXUS: Run Packaged Workbench (Launch.exe)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Launch.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "NEXUS: Backend Server (nexus-core.exe)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/build-msvc/Release/nexus-core.exe",
+      "args": ["7878"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal"
+    }
+  ]
+}
